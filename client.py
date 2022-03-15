@@ -28,6 +28,21 @@ class MainWindow(QWidget):
         self.button = QPushButton("Send", self)
         self.button.move(10, 90)
 
+        self.label3 = QLabel("Enter the hostname:",self)
+        self.text2 = QLineEdit(self)
+        self.text2.move(10, 50)
+
+        self.label4 = QLabel("Enter your API Key:",self)
+        self.text3 = QLineEdit(self)
+        self.text3.move(10, 100)
+
+        self.button= QLabel("Send:",self)
+        self.button.move(10, 200)
+
+        self.label4= QLabel("Answer:",self)
+        self.label4.move(10, 240)
+
+
         self.button.clicked.connect(self.on_click)
         self.button.pressed.connect(self.on_click)
 
